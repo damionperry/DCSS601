@@ -1,12 +1,12 @@
 ---
 title: "Welcome to My Crib"
 description: |
-  A test pilot for developing a blog through R and distill 
+  Pilot post for developing a blog through R and distill for DCSS601
 author:
   - name: Damion Perry 
-    url: some website url
+    url: 
     affiliation: UMILL
-    affiliation_url: umill website url 
+    affiliation_url: https://sites.google.com/umass.edu/umill 
 date: 01-31-2022
 output:
   distill::distill_article:
@@ -22,4 +22,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+HW1
 
+Here is some text. 
