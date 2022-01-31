@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to My Blog",
+    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Damion Perry",
+        "url": "some website url"
+      }
+    ],
+    "date": "2022-01-31",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-01-31T15:31:21-05:00",
+    "input_file": "welcome.knit.md"
+  }
+]
