@@ -1,0 +1,9 @@
+---
+title: "Hi!"
+description: "I'm Damion, and I'm trying my best to figure out how to be a better biomechanist, physiologist, programmer in R & Python, and data scientist." 
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
