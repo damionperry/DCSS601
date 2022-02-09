@@ -1,28 +1,26 @@
 {
-    "id": "F5BA3C6C",
-    "path": "~/Distill Blog/DCSS601/hw2.Rmd",
-    "project_path": "hw2.Rmd",
+    "id": "5A848B2B",
+    "path": "~/Distill Blog/DCSS601/_posts/hw2.Rmd",
+    "project_path": "_posts/hw2.Rmd",
     "type": "r_markdown",
-    "hash": "1561280757",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1644425359965.0,
+    "created": 1644430044869.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
-        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "26,13",
-        "scrollLine": "10",
-        "last_setup_crc32": "E903667B740d1c70"
+        "cursorPosition": "34,47",
+        "scrollLine": "14"
     },
     "folds": "",
     "lastKnownWriteTime": 1644429779,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1644429779295,
+    "last_content_update": 1644429779,
     "read_only": false,
     "read_only_alternatives": []
 }

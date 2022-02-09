@@ -1,0 +1,47 @@
+---
+title: "Homework 2"
+description: |
+  Reading in .xls data & doing a bit of tidying! 
+author:
+  - name: Damion Perry
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+## The following is data summarizing the US Railroad employment numbers from 2012. 
+
+
+### 'state' 
+type -> character string\n
+Represents the state that railroad employees worked.
+
+### 'county' 
+type -> character string\n
+Represents the county within the corresponding state.
+
+### 'num_employees' 
+type -> dbl\n
+Number of employees working for the railroad in the corresponding state and county. 
+
+## Tidy & Wrangle
+The original dataset has been modified to display the results for US railroad employment in Massachusetts. 
+
+```{r}
+library(readxl)
+StateCounty2012 <- read_excel("HW2/StateCounty2012.xlsx", skip = 2)
+state_county <- StateCounty2012[c(1,3,5)]
+state_county %>% 
+  rename(state = STATE, county = COUNTY, num_employees = TOTAL) %>%
+  drop_na(county) %>% 
+  filter(state == "MA") %>% 
+  arrange(desc(num_employees))
+```
+
+
+
+
+

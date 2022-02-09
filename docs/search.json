@@ -20,7 +20,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nThe following is data summarizing the US Railroad employment numbers from 2012.\n‘state’\ntype -> character string Represents the state that railroad employees worked.\n‘county’\ntype -> character string Represents the county within the corresponding state.\n‘num_employees’\ntype -> dbl Number of employees working for the railroad in the corresponding state and county.\nTidy & Wrangle\nThe original dataset has been modified to display the results for US railroad employment in Massachusetts.\n\n\nlibrary(readxl)\nStateCounty2012 <- read_excel(\"HW2/StateCounty2012.xlsx\", skip = 2)\nstate_county <- StateCounty2012[c(1,3,5)]\nstate_county %>% \n  rename(state = STATE, county = COUNTY, num_employees = TOTAL) %>%\n  drop_na(county) %>% \n  filter(state == \"MA\") %>% \n  arrange(desc(num_employees))\n\n\n# A tibble: 12 × 3\n   state county     num_employees\n   <chr> <chr>              <dbl>\n 1 MA    MIDDLESEX            673\n 2 MA    SUFFOLK              558\n 3 MA    PLYMOUTH             429\n 4 MA    NORFOLK              386\n 5 MA    ESSEX                314\n 6 MA    WORCESTER            310\n 7 MA    BRISTOL              232\n 8 MA    HAMPDEN              202\n 9 MA    FRANKLIN             113\n10 MA    HAMPSHIRE             68\n11 MA    BERKSHIRE             50\n12 MA    BARNSTABLE            44\n\n\n\n\n",
-      "last_modified": "2022-02-09T13:03:04-05:00"
+      "last_modified": "2022-02-09T13:05:35-05:00"
     },
     {
       "path": "index.html",
